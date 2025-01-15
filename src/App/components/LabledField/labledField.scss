@@ -1,0 +1,18 @@
+.labled-field-letter {
+	display: flex;
+	flex-direction: column;
+	gap: 9px;
+	width: 100%;
+
+	&__label {
+		text-overflow: ellipsis;
+		white-space: nowrap;
+		overflow: hidden;
+		color: #6b6b6f;
+		font-family: 'Inter';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 130%;
+	}
+}
