@@ -7,10 +7,10 @@ export default function RevokeApprovalModal() {
 	const [data, setValue] = revokeApprovalContext.useState()
 
 	return (
-		<div style={{ display: "flex", backgroundColor: "gray", width: "100vw", height: "100vh", justifyContent: 'center', alignItems: "center" }}>
+		// <div style={{ display: "flex", backgroundColor: "gray", width: "100vw", height: "100vh", justifyContent: 'center', alignItems: "center" }}>
 		<revokeApprovalContext.Provider value={{ data, setValue }}>
 			<PreviewModal />
 		</revokeApprovalContext.Provider >
-		</div>
+		// </div>
 	)
 }

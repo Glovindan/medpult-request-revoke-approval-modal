@@ -5,12 +5,12 @@ import { InsuredListData } from '../types'
 function sleep(ms: number) {
 	return new Promise((resolve) => window.setTimeout(resolve, ms))
 }
-type SetLetterDataCallback = (data: RevokeApprovalData) => void
+type SetRevokeDataCallback = (data: RevokeApprovalData) => void
 /** Функция обратного вызова заполнения данных модалки */
-let setLetterDataCallback: SetLetterDataCallback | undefined
-async function appendSetRevokeDataCallback(callback: SetLetterDataCallback) {
-	setLetterDataCallback = callback
-	;(window as any)['setLetterDataCallback'] = callback
+let setRevokeDataCallback: SetRevokeDataCallback | undefined
+async function appendSetRevokeDataCallback(callback: SetRevokeDataCallback) {
+	setRevokeDataCallback = callback
+	;(window as any)['setRevokeDataCallback'] = callback
 }
 
 /** Обработчик нажатия на кнопку отмена */

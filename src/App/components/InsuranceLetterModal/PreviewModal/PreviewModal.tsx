@@ -9,7 +9,7 @@ import InsuredList from '../../InsuredList/InsuredList';
 /** Модальное окно гарантийного письма (Предпросомтр) */
 export default function PreviewModal() {
 	const { data, setValue } = revokeApprovalContext.useContext();
-	const [isFileLoading, setIsFileLoading] = useState<boolean>(true);
+	const [isFileLoading, setIsFileLoading] = useState<boolean>(false);
 
 	// Инициализация
 	React.useLayoutEffect(() => {
@@ -26,12 +26,12 @@ export default function PreviewModal() {
 	const onClickSave = async () => {
 		const revokeData = data.revokeApproval
 		await Scripts.updateRevokeData(revokeData)
-		await Scripts.handleSaveRevokeClick()
+		await Scripts.handleSaveRevokeClick(data.revokeApproval.revokeId)
 	}
 
 	// Отмена
 	const onClickCancel = async () => {
-		await Scripts.handleCancelRevokeClick()
+		await Scripts.handleCancelRevokeClick(data.revokeApproval.revokeId)
 	}
 
 	/** Изменить идентификаторы выбранных контрагентов */
