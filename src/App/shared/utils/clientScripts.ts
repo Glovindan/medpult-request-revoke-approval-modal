@@ -14,12 +14,12 @@ async function appendSetRevokeDataCallback(callback: SetRevokeDataCallback) {
 }
 
 /** Обработчик нажатия на кнопку отмена */
-async function handleCancelRevokeClick() {
+async function handleCancelRevokeClick(revokeId: string) {
 	// TODO
 }
 
 /** Обработчик нажатия на кнопку сохранить */
-async function handleSaveRevokeClick() {
+async function handleSaveRevokeClick(revokeId: string) {
 	// TODO
 }
 

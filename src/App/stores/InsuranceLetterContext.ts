@@ -5,6 +5,8 @@ import { initGlobalContext } from './GlobalContext'
 export class RevokeApprovalData {
 	/** ID Согласования */
 	approvalId: string
+	/** ID Отзыва */
+	revokeId: string
 	/** Тело файла */
 	fileSrc: string
 	/** Идентификаторы застрахованных */

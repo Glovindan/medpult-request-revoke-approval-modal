@@ -54,11 +54,11 @@ export default function PreviewModal() {
 					<FileViewer src={data.revokeApproval.fileSrc} isFileLoading={isFileLoading} />
 				</div>
 				{/* Выбор застрахованных  */}
-				{data.revokeApproval.isCollective && !data.revokeApproval.isFull &&
+				{/* {data.revokeApproval.isCollective && !data.revokeApproval.isFull &&
 					<div className='insurance-letter-modal__insured-list'>
 						<InsuredList approvalId={data.revokeApproval.approvalId} selectedContractorsIds={data.revokeApproval.contractorsIds} setSelectedContractorsIds={setSelectedContractorsIds} />
 					</div>
-				}
+				} */}
 				{/* Кнопки */}
 				<div className='insurance-letter-modal__buttons'>
 					{/* Подтвердить и сохранить */}
